@@ -9,6 +9,9 @@ items:
   metadata:
     name: demo-app
     namespace: default
+    labels:
+      app.kubernetes.io/name: demo-app
+      app.kubernetes.io/instance: demo-app
   spec:
     selector:
       matchLabels:
